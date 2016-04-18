@@ -924,7 +924,7 @@ var async = require('async'),
                           'email:confirmed': config.autoConfirmEmails ? 1 : 0,
 
                           // this is a migration script, no one is online
-                          status: 'offline',
+                          status: 'online',
 
                           // don't ban the users now, ban them later, if _imported_user:_uid._banned == 1
                           banned: 0,
