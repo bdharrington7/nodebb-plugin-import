@@ -1640,6 +1640,12 @@ var async = require('async'),
           },
           function(nxt) {
             Groups.leave('cid:' + category.cid + ':privileges:groups:topics:reply', 'guests', nxt);
+          },
+          function(nxt) {
+            Groups.leave('cid:' + category.cid + ':privileges:groups:find', 'guests', nxt);
+          },
+          function(nxt) {
+            Groups.leave('cid:' + category.cid + ':privileges:groups:read', 'guests', nxt);
           }
         ], next);
       },
